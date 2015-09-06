@@ -4,10 +4,12 @@ var side = 0
 var jump = false
 var score = 0
 var sound = 0
+var start = false
 
 func _ready():
 	set_process_input(true)
 	set_fixed_process(true)
+	get_node("AnimatedSprite/AnimationPlayer").play("idle")
 	
 func _fixed_process(delta):
 	if !is_colliding():
@@ -20,7 +22,7 @@ func _fixed_process(delta):
 		jump = true
 
 func _input(ev):
-	if ev.is_pressed() && !ev.is_echo() && jump:
+	if ev.is_pressed() && !ev.is_echo() && jump && start:
 		jump = false
 		sound = (randi() % 5)+1
 		get_node("SamplePlayer2D").play("hit"+str(sound))
@@ -36,6 +38,13 @@ func _input(ev):
 			side = 0
 			get_node("AnimatedSprite/AnimationPlayer").play("rotate",-1,-1,true)
 			get_node("AnimatedSprite").set_flip_h(false)
+			
+		
+	elif ev.is_pressed() && !ev.is_echo() && !start:
+		get_parent().get_node("Timer").start()
+		get_parent().get_node("gui/start").hide()
+		get_node("AnimatedSprite/AnimationPlayer").play("run")
+		start = true
 
 func _on_VisibilityNotifier2D_exit_viewport( viewport ):
 	get_parent().get_node("gui/replay").show()

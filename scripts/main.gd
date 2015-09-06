@@ -41,4 +41,5 @@ func initial_blocks():
 	for i in range(15):
 		new_block = block.instance()
 		new_block.set_pos(Vector2(i*128,705))
+		new_block.movement = false
 		add_child(new_block)
