@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="19" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+<resource_file type="PackedScene" subresource_count="20" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
 	<ext_resource path="res://scripts/main.gd" type="Script"></ext_resource>
 	<ext_resource path="res://scripts/ninja.gd" type="Script"></ext_resource>
 	<ext_resource path="res://gfx/ninja/run/Run__000.png" type="Texture"></ext_resource>
@@ -14,6 +14,7 @@
 	<ext_resource path="res://gfx/ninja/run/Run__009.png" type="Texture"></ext_resource>
 	<ext_resource path="res://gfx/bg.png" type="Texture"></ext_resource>
 	<ext_resource path="res://fonts/ninjanaruto.fnt" type="Font"></ext_resource>
+	<ext_resource path="res://music/blackmoor_ninjas.ogg" type="AudioStream"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 32, 64 </vector2>
@@ -84,9 +85,9 @@
 			<string> "conn_count" </string>
 			<int> 5 </int>
 			<string> "conns" </string>
-			<int_array  len="30"> 				1, 0, 104, 103, 2, 0, 2, 0, 104, 105, 2, 0, 5, 3, 107, 106, 2, 0, 7, 3, 109, 108, 2, 0, 11, 0, 111, 110, 2, 0 </int_array>
+			<int_array  len="30"> 				1, 0, 115, 114, 2, 0, 2, 0, 115, 116, 2, 0, 5, 3, 118, 117, 2, 0, 7, 3, 120, 119, 2, 0, 12, 0, 122, 121, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="112">
+			<string_array  len="123">
 				<string> "world" </string>
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
@@ -138,6 +139,10 @@
 				<string> "trigger" </string>
 				<string> "VisibilityNotifier2D" </string>
 				<string> "rect" </string>
+				<string> "RayCast2D" </string>
+				<string> "enabled" </string>
+				<string> "cast_to" </string>
+				<string> "layer_mask" </string>
 				<string> "background" </string>
 				<string> "CanvasLayer" </string>
 				<string> "layer" </string>
@@ -190,6 +195,13 @@
 				<string> "autowrap" </string>
 				<string> "uppercase" </string>
 				<string> "percent_visible" </string>
+				<string> "StreamPlayer" </string>
+				<string> "stream/stream" </string>
+				<string> "stream/play" </string>
+				<string> "stream/loop" </string>
+				<string> "stream/volume_db" </string>
+				<string> "stream/autoplay" </string>
+				<string> "stream/paused" </string>
 				<string> "_on_Timer_timeout" </string>
 				<string> "timeout" </string>
 				<string> "_on_Timer_block_timeout" </string>
@@ -201,11 +213,11 @@
 				<string> "pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 13 </int>
+			<int> 15 </int>
 			<string> "nodes" </string>
-			<int_array  len="451"> 				-1, -1, 1, 0, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 0, 0, 0, 14, 14, -1, 5, 2, 0, 15, 3, 16, 2, 17, 10, 18, 1, 0, 0, 0, 14, 19, -1, 5, 2, 0, 15, 3, 16, 11, 17, 10, 18, 1, 0, 0, 0, 21, 20, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 12, 8, 5, 9, 6, 10, 7, 11, 1, 22, 10, 23, 3, 24, 13, 25, 14, 26, 10, 27, 3, 28, 3, 29, 15, 12, 16, 0, 3, 0, 30, 30, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 31, 17, 32, 1, 33, 10, 34, 10, 35, 18, 0, 4, 0, 36, 36, -1, 10, 2, 0, 37, 3, 38, 5, 39, 19, 40, 20, 41, 21, 42, 1, 43, 2, 44, 22, 45, 23, 0, 3, 0, 46, 46, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 47, 13, 48, 10, 0, 3, 0, 49, 49, -1, 11, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 50, 24, 0, 0, 0, 52, 51, -1, 6, 2, 0, 53, 25, 54, 4, 55, 5, 56, 6, 13, 26, 0, 8, 0, 57, 57, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 27, 8, 5, 9, 6, 10, 7, 11, 1, 58, 28, 32, 1, 54, 4, 33, 10, 34, 10, 59, 3, 60, 3, 61, 7, 35, 18, 62, 10, 63, 29, 0, 0, 0, 52, 64, -1, 5, 2, 0, 53, 30, 54, 4, 55, 5, 56, 6, 0, 10, 0, 66, 65, -1, 28, 2, 0, 3, 10, 4, 2, 5, 2, 6, 3, 67, 31, 68, 32, 69, 33, 70, 34, 71, 0, 72, 0, 73, 0, 74, 0, 75, 10, 76, 1, 77, 30, 78, 30, 79, 2, 80, 35, 81, 10, 82, 10, 83, 10, 84, 10, 85, 36, 86, 37, 87, 10, 88, 10, 89, 3, 0, 10, 0, 91, 90, -1, 31, 2, 0, 3, 10, 4, 2, 5, 2, 6, 3, 67, 38, 68, 39, 69, 40, 70, 41, 71, 0, 72, 0, 73, 0, 74, 0, 75, 1, 76, 1, 77, 30, 79, 2, 80, 35, 92, 5, 93, 2, 94, 2, 95, 2, 96, 5, 97, 10, 98, 10, 85, 42, 89, 7, 99, 7, 100, 10, 101, 10, 102, 43, 0 </int_array>
+			<int_array  len="505"> 				-1, -1, 1, 0, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 0, 0, 0, 14, 14, -1, 5, 2, 0, 15, 3, 16, 2, 17, 10, 18, 1, 0, 0, 0, 14, 19, -1, 5, 2, 0, 15, 3, 16, 11, 17, 10, 18, 1, 0, 0, 0, 21, 20, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 12, 8, 5, 9, 6, 10, 7, 11, 1, 22, 10, 23, 3, 24, 13, 25, 14, 26, 10, 27, 3, 28, 3, 29, 15, 12, 16, 0, 3, 0, 30, 30, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 31, 17, 32, 1, 33, 10, 34, 10, 35, 18, 0, 4, 0, 36, 36, -1, 10, 2, 0, 37, 3, 38, 5, 39, 19, 40, 20, 41, 21, 42, 1, 43, 2, 44, 22, 45, 23, 0, 3, 0, 46, 46, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 47, 13, 48, 10, 0, 3, 0, 49, 49, -1, 11, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 50, 24, 0, 3, 0, 51, 51, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 52, 1, 53, 25, 54, 3, 0, 0, 0, 56, 55, -1, 6, 2, 0, 57, 26, 58, 4, 59, 5, 60, 6, 13, 27, 0, 9, 0, 61, 61, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 28, 8, 5, 9, 6, 10, 7, 11, 1, 62, 29, 32, 1, 58, 4, 33, 10, 34, 10, 63, 3, 64, 3, 65, 7, 35, 18, 66, 10, 67, 30, 0, 0, 0, 56, 68, -1, 5, 2, 0, 57, 31, 58, 4, 59, 5, 60, 6, 0, 11, 0, 70, 69, -1, 28, 2, 0, 3, 10, 4, 2, 5, 2, 6, 3, 71, 32, 72, 33, 73, 34, 74, 35, 75, 0, 76, 0, 77, 0, 78, 0, 79, 10, 80, 1, 81, 31, 82, 31, 83, 2, 84, 36, 85, 10, 86, 10, 87, 10, 88, 10, 89, 37, 90, 38, 91, 10, 92, 10, 93, 3, 0, 11, 0, 95, 94, -1, 31, 2, 0, 3, 10, 4, 2, 5, 2, 6, 3, 71, 39, 72, 40, 73, 41, 74, 42, 75, 0, 76, 0, 77, 0, 78, 0, 79, 1, 80, 1, 81, 31, 83, 2, 84, 36, 96, 5, 97, 2, 98, 2, 99, 2, 100, 5, 101, 10, 102, 10, 89, 43, 93, 7, 103, 7, 104, 10, 105, 10, 106, 44, 0, 0, 0, 107, 107, -1, 7, 2, 0, 108, 45, 109, 10, 110, 1, 111, 5, 112, 10, 113, 10, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="44" shared="false">
+			<array  len="46" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -340,7 +352,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="3" shared="false">
 								<string> "res://scripts/main.gd" </string>
@@ -373,6 +385,7 @@
 				</array>
 				<string> "run" </string>
 				<rect2> -10, -10, 20, 20 </rect2>
+				<vector2> 0, 50 </vector2>
 				<int> -1 </int>
 				<dictionary  shared="false">
 					<string> "_editor_collapsed" </string>
@@ -394,6 +407,7 @@
 				<real> 79 </real>
 				<string> "SCORE: 0" </string>
 				<real> -1 </real>
+				<resource  resource_type="AudioStream" path="res://music/blackmoor_ninjas.ogg">  </resource>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

@@ -32,7 +32,7 @@ func _input(ev):
 			else:
 				move(Vector2(0,10))
 				side = 0
-				get_node("AnimatedSprite/AnimationPlayer").play("rotate")
+				get_node("AnimatedSprite/AnimationPlayer").play("rotate",-1,-1,true)
 				get_node("AnimatedSprite").set_flip_h(false)
 
 func _on_VisibilityNotifier2D_exit_viewport( viewport ):

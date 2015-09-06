@@ -10,6 +10,7 @@ func _ready():
 	randomize()
 	initial_blocks()
 	get_node("gui/replay").hide()
+	get_node("StreamPlayer").play()
 
 func _on_Timer_timeout():
 	amount = (randi() % 4)+2
