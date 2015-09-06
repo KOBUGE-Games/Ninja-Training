@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="4" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
 	<ext_resource path="res://scripts/block.gd" type="Script"></ext_resource>
-	<ext_resource path="res://gfx/block_long.png" type="Texture"></ext_resource>
+	<ext_resource path="res://gfx/block.png" type="Texture"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 320, 64 </vector2>
+		<vector2 name="extents"> 64, 64 </vector2>
 
 	</resource>
 	<main_resource>
@@ -63,7 +63,7 @@
 				<bool> True </bool>
 				<real> 1 </real>
 				<int> 1 </int>
-				<vector2> 1344, 704 </vector2>
+				<vector2> 1086, 704 </vector2>
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
 				<int> 0 </int>
@@ -74,13 +74,13 @@
 				<resource  resource_type="Script" path="res://scripts/block.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> 754.418, 616.373 </vector2>
+							<vector2> 675.31, 389.208 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -100,7 +100,7 @@
 							<string> "snap_step" </string>
 							<vector2> 128, 128 </vector2>
 							<string> "zoom" </string>
-							<real> 2.517533 </real>
+							<real> 0.9025 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -197,11 +197,12 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 0 </int>
+							<int> 2 </int>
 							<string> "sources" </string>
-							<array  len="2" shared="false">
+							<array  len="3" shared="false">
 								<string> "res://scripts/block.gd" </string>
 								<string> "res://scripts/main.gd" </string>
+								<string> "res://scripts/ninja.gd" </string>
 							</array>
 						</dictionary>
 					</dictionary>
@@ -214,7 +215,7 @@
 					</dictionary>
 				</dictionary>
 				<vector2> 0, 0 </vector2>
-				<resource  resource_type="Texture" path="res://gfx/block_long.png">  </resource>
+				<resource  resource_type="Texture" path="res://gfx/block.png">  </resource>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 			</array>
