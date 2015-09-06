@@ -48,8 +48,9 @@ func _input(ev):
 
 func _on_VisibilityNotifier2D_exit_viewport( viewport ):
 	get_parent().get_node("gui/replay").show()
-	get_parent().get_node("gui/scores").set_text("SCORE: "+str(score))
-	get_parent().get_node("gui/scores").show()
+	get_parent().get_node("gui/scores").hide()
+	get_parent().get_node("gui/start").set_text("GAME OVER\n SCORE: "+str(score))
+	get_parent().get_node("gui/start").show()
 
 
 func _on_AnimationPlayer_finished():
