@@ -5,6 +5,7 @@ var jump = false
 var score = 0
 var sound = 0
 var start = false
+var dead = false
 
 func _ready():
 	set_process_input(true)
@@ -12,14 +13,20 @@ func _ready():
 	get_node("AnimatedSprite/AnimationPlayer").play("idle")
 	
 func _fixed_process(delta):
-	if !is_colliding():
-		jump = false
+	if !dead:
+		if !is_colliding():
+			jump = false
+			if side == 0:
+				move(Vector2(0,10))
+			else:
+				move(Vector2(0,-10))
+		else:
+			jump = true
+	else:
 		if side == 0:
 			move(Vector2(0,10))
 		else:
 			move(Vector2(0,-10))
-	else:
-		jump = true
 
 func _input(ev):
 	if ev.is_pressed() && !ev.is_echo() && jump && start:

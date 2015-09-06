@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var speed = 10
 var movement = true
+var last_one = false
 
 func _ready():
 	set_fixed_process(true)
@@ -13,6 +14,10 @@ func _fixed_process(delta):
 		move(Vector2(-speed,0))
 	if get_pos().x < -128:
 		queue_free()
+		
+	if is_colliding():
+		if last_one:
+			get_parent().get_node("ninja").dead = true
 		
 func _input(ev):
 	if ev.is_pressed() && !ev.is_echo():
