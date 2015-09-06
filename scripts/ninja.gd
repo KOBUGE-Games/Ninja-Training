@@ -17,8 +17,7 @@ func _fixed_process(delta):
 			move(Vector2(0,-10))
 	else:
 		jump = true
-		move(Vector2(0,0))
-		
+
 func _input(ev):
 	if ev.is_pressed() && !ev.is_echo():
 		if jump:
@@ -28,13 +27,19 @@ func _input(ev):
 			if side == 0:
 				move(Vector2(0,-10))
 				side = 1
-				get_node("AnimatedSprite").set_flip_v(true)
+				get_node("AnimatedSprite/AnimationPlayer").play("rotate")
+				get_node("AnimatedSprite").set_flip_h(true)
 			else:
 				move(Vector2(0,10))
 				side = 0
-				get_node("AnimatedSprite").set_flip_v(false)
+				get_node("AnimatedSprite/AnimationPlayer").play("rotate")
+				get_node("AnimatedSprite").set_flip_h(false)
 
 func _on_VisibilityNotifier2D_exit_viewport( viewport ):
 	get_parent().get_node("gui/replay").show()
 	get_parent().get_node("gui/scores").set_text("SCORE: "+str(score))
 	get_parent().get_node("gui/scores").show()
+
+
+func _on_AnimationPlayer_finished():
+	get_node("AnimatedSprite/AnimationPlayer").play("run")
