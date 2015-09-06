@@ -17,7 +17,7 @@ func _fixed_process(delta):
 			move(Vector2(0,-10))
 	else:
 		jump = true
-		#move(Vector2(0,0))
+		move(Vector2(0,0))
 		
 func _input(ev):
 	if ev.is_pressed() && !ev.is_echo():
