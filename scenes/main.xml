@@ -324,7 +324,7 @@
 				<resource  resource_type="Script" path="res://scripts/main.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
@@ -447,7 +447,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 0 </int>
+							<int> 2 </int>
 							<string> "sources" </string>
 							<array  len="3" shared="false">
 								<string> "res://scripts/main.gd" </string>
@@ -505,12 +505,12 @@
 				<color> 0, 0, 0, 1 </color>
 				<string> "SCORE: 0" </string>
 				<real> -1 </real>
-				<real> 273 </real>
+				<real> 201 </real>
 				<real> 1280 </real>
-				<real> 502 </real>
+				<real> 430 </real>
 				<real> 4 </real>
-				<string> "Touch anywhere to start&#000a;&#000a;by alket&#000a;www kobuge org" </string>
-				<string> "Start" </string>
+				<string> "Ninja Training&#000a;&#000a;by alket&#000a;www kobuge org" </string>
+				<string> "Train" </string>
 				<resource  resource_type="AudioStream" path="res://music/blackmoor_ninjas.ogg">  </resource>
 			</array>
 			<string> "version" </string>

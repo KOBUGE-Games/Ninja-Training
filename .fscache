@@ -1,4 +1,4 @@
-::res://::1441709461
+::res://::1441710572
 icon.png::ImageTexture::1441544085::
 ::res://fonts::1441707889
 ninjanaruto.fnt::Font::1441707889::font<>../../Downloads/sk89q_ninja-naruto/njnaruto.ttf<>6cb4254d224fa60f15c496c4720b5c9a<>1089718550
@@ -40,7 +40,7 @@ hit5.wav::Sample::1441557666::
 ::res://scenes::1441709461
 block.xml::PackedScene::1441628417::
 main.xml::PackedScene::1441709461::
-::res://scripts::1441709514
-block.gd::GDScript::1441709514::
-main.gd::GDScript::1441709514::
-ninja.gd::GDScript::1441709514::
+::res://scripts::1441710932
+block.gd::GDScript::1441710932::
+main.gd::GDScript::1441710932::
+ninja.gd::GDScript::1441710932::
