@@ -28,7 +28,7 @@
 	<ext_resource path="res://music/hit4.wav" type="Sample"></ext_resource>
 	<ext_resource path="res://music/hit5.wav" type="Sample"></ext_resource>
 	<ext_resource path="res://gfx/bg.png" type="Texture"></ext_resource>
-	<ext_resource path="res://fonts/ninjanaruto.fnt" type="Font"></ext_resource>
+	<ext_resource path="res://fonts/baihana.fnt" type="Font"></ext_resource>
 	<ext_resource path="res://music/blackmoor_ninjas.ogg" type="AudioStream"></ext_resource>
 	<resource type="SpriteFrames" path="local://1">
 		<array name="frames" len="20" shared="false">
@@ -496,7 +496,7 @@
 				<real> 388 </real>
 				<real> 790 </real>
 				<real> 488 </real>
-				<resource  resource_type="Font" path="res://fonts/ninjanaruto.fnt">  </resource>
+				<resource  resource_type="Font" path="res://fonts/baihana.fnt">  </resource>
 				<string> "Replay" </string>
 				<resource name=""></resource>				<real> 7 </real>
 				<real> 9 </real>
@@ -509,7 +509,7 @@
 				<real> 1280 </real>
 				<real> 430 </real>
 				<real> 4 </real>
-				<string> "Ninja Training&#000a;&#000a;by alket&#000a;www kobuge org" </string>
+				<string> "Ninja Training&#000a;&#000a;by alket&#000a;www.kobuge.org" </string>
 				<string> "Train" </string>
 				<resource  resource_type="AudioStream" path="res://music/blackmoor_ninjas.ogg">  </resource>
 			</array>

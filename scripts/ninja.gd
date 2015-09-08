@@ -12,7 +12,7 @@ var hit = false
 func _ready():
 	set_process_input(true)
 	set_fixed_process(true)
-	get_parent().get_node("gui/scores").set_text("HIGHSCORE "+str(get_previous_score()))
+	get_parent().get_node("gui/scores").set_text("HIGHSCORE: "+str(get_previous_score()))
 	get_node("AnimatedSprite/AnimationPlayer").play("idle")
 
 	
@@ -83,7 +83,7 @@ func _on_start_pressed():
 		block.movement = true
 	start = true
 	get_parent().get_node("gui/start").queue_free()
-	get_parent().get_node("gui/scores").set_text("SCORE 0")
+	get_parent().get_node("gui/scores").set_text("SCORE: 0")
 	
 func highscore(score):
 	var f = ConfigFile.new()

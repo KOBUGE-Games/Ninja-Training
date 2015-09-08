@@ -4,4 +4,4 @@
 * Background and block graphics by pzUH - http://opengameart.org/content/free-desert-platformer-tileset
 * Background music by matthew.pablo - http://opengameart.org/content/blackmoor-ninjas-battle-theme
 * Sounds by TinyWorlds - http://opengameart.org/content/5-hit-sounds-dying
-* Font by ahmed7x - http://www.fontspace.com/sk89q/ninja-naruto
+* Font by Pablo Cosgaya & Dani Raskovsky  - http://openfontlibrary.org/en/font/bahiana
