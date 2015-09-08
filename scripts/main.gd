@@ -2,7 +2,7 @@ extends Node2D
 
 var block = load("res://scenes/block.xml")
 var new_block
-var side = 0
+var side = 1
 var speed = 10
 var amount = 0
 var last_i = 0
@@ -15,11 +15,11 @@ func _ready():
 	get_node("StreamPlayer").play()
 
 func _on_Timer_timeout():
-	amount = (randi() % 4)+2
+	amount = (randi() % 5)+2
 	if side == 0:
 		for i in range(amount):
 			new_block = block.instance()
-			new_block.set_pos(Vector2(1086+(i*128),705))
+			new_block.set_pos(Vector2(1344+(i*128),704))
 			new_block.get_node("Sprite").set_flip_v(false)
 			new_block.speed = speed
 			new_block.add_collision_exception_with(last_block)
@@ -30,8 +30,9 @@ func _on_Timer_timeout():
 	else:
 		for i in range(amount):
 			new_block = block.instance()
-			new_block.set_pos(Vector2(1086+(i*128),62))
+			new_block.set_pos(Vector2(1344+(i*128),16))
 			new_block.get_node("Sprite").set_flip_v(true)
+			new_block.speed = speed
 			new_block.add_collision_exception_with(last_block)
 			last_block = new_block
 			add_child(new_block)
@@ -52,4 +53,5 @@ func initial_blocks():
 			new_block.add_collision_exception_with(last_block)
 		last_block = new_block
 		new_block.movement = false
+		new_block.add_to_group("init_blocks")
 		add_child(new_block)

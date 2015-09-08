@@ -12,7 +12,7 @@ func _ready():
 	set_process_input(true)
 	set_fixed_process(true)
 	get_node("AnimatedSprite/AnimationPlayer").play("idle")
-	get_node("RayCast2D").add_exception(self)
+
 	
 func _fixed_process(delta):
 	if !dead:
@@ -59,20 +59,23 @@ func _input(ev):
 			side = 0
 			get_node("AnimatedSprite/AnimationPlayer").play("rotate",-1,-1,true)
 			get_node("AnimatedSprite").set_flip_h(false)
-			
-		
-	elif ev.is_pressed() && !ev.is_echo() && !start:
-		get_parent().get_node("Timer").start()
-		get_parent().get_node("gui/start").hide()
-		get_node("AnimatedSprite/AnimationPlayer").play("run")
-		start = true
 
 func _on_VisibilityNotifier2D_exit_viewport( viewport ):
 	get_parent().get_node("gui/replay").show()
 	get_parent().get_node("gui/scores").hide()
-	get_parent().get_node("gui/start").set_text("GAME OVER\n SCORE: "+str(score))
-	get_parent().get_node("gui/start").show()
+	get_parent().get_node("gui/welcome").set_text("GAME OVER\n SCORE: "+str(score))
+	get_parent().get_node("gui/welcome").show()
 
 
 func _on_AnimationPlayer_finished():
 	get_node("AnimatedSprite/AnimationPlayer").play("run")
+
+
+func _on_start_pressed():
+	get_parent().get_node("Timer").start()
+	get_parent().get_node("gui/welcome").hide()
+	get_node("AnimatedSprite/AnimationPlayer").play("run")
+	for block in get_tree().get_nodes_in_group("init_blocks"):
+		block.movement = true
+	start = true
+	get_parent().get_node("gui/start").queue_free()

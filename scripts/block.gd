@@ -6,7 +6,6 @@ var last_one = false
 
 func _ready():
 	set_fixed_process(true)
-	set_process_input(true)
 	set_z(-1)
 	
 func _fixed_process(delta):
@@ -18,7 +17,3 @@ func _fixed_process(delta):
 	if is_colliding():
 		if last_one:
 			get_parent().get_node("ninja").dead = true
-		
-func _input(ev):
-	if ev.is_pressed() && !ev.is_echo():
-		movement = true
