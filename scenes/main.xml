@@ -1,57 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="36" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
-	<ext_resource path="res://scripts/main.gd" type="Script"></ext_resource>
-	<ext_resource path="res://scripts/ninja.gd" type="Script"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__000.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__001.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__002.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__003.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__004.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__005.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__006.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__007.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__008.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/run/Run__009.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__000.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__001.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__002.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__003.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__004.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__005.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__006.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__007.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__008.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gfx/ninja/idle/Idle__009.png" type="Texture"></ext_resource>
-	<ext_resource path="res://music/hit1.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://music/hit2.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://music/hit3.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://music/hit4.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://music/hit5.wav" type="Sample"></ext_resource>
-	<ext_resource path="res://gfx/bg.png" type="Texture"></ext_resource>
-	<ext_resource path="res://fonts/baihana.fnt" type="Font"></ext_resource>
-	<ext_resource path="res://music/blackmoor_ninjas.ogg" type="AudioStream"></ext_resource>
+<resource_file type="PackedScene" subresource_count="38" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://music/swing1.wav" type="Sample" index="26"></ext_resource>
+	<ext_resource path="res://music/swing3.wav" type="Sample" index="28"></ext_resource>
+	<ext_resource path="res://music/step3.wav" type="Sample" index="25"></ext_resource>
+	<ext_resource path="res://music/step1.wav" type="Sample" index="23"></ext_resource>
+	<ext_resource path="res://music/swing2.wav" type="Sample" index="27"></ext_resource>
+	<ext_resource path="res://music/begin.wav" type="Sample" index="22"></ext_resource>
+	<ext_resource path="res://music/step2.wav" type="Sample" index="24"></ext_resource>
+	<ext_resource path="res://scripts/main.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__007.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://scripts/ninja.gd" type="Script" index="1"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__003.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__004.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__008.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__001.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__002.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__005.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__006.png" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__000.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://gfx/ninja/run/Run__009.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__000.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__001.png" type="Texture" index="13"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__002.png" type="Texture" index="14"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__003.png" type="Texture" index="15"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__004.png" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__005.png" type="Texture" index="17"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__006.png" type="Texture" index="18"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__007.png" type="Texture" index="19"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__008.png" type="Texture" index="20"></ext_resource>
+	<ext_resource path="res://gfx/ninja/idle/Idle__009.png" type="Texture" index="21"></ext_resource>
+	<ext_resource path="res://gfx/bg.png" type="Texture" index="29"></ext_resource>
+	<ext_resource path="res://music/ninjadnb.opus" type="AudioStream" index="31"></ext_resource>
+	<ext_resource path="res://fonts/baihana.fnt" type="BitmapFont" index="30"></ext_resource>
 	<resource type="SpriteFrames" path="local://1">
-		<array name="frames" len="20" shared="false">
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__000.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__001.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__002.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__003.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__004.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__005.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__006.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__007.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__008.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/run/Run__009.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__000.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__001.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__002.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__003.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__004.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__005.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__006.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__007.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__008.png">  </resource>
-			<resource  resource_type="Texture" path="res://gfx/ninja/idle/Idle__009.png">  </resource>
+		<array name="animations" len="1" shared="false">
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="20" shared="false">
+					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="5">  </resource>
+					<resource  external="6">  </resource>
+					<resource  external="7">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+					<resource  external="10">  </resource>
+					<resource  external="11">  </resource>
+					<resource  external="12">  </resource>
+					<resource  external="13">  </resource>
+					<resource  external="14">  </resource>
+					<resource  external="15">  </resource>
+					<resource  external="16">  </resource>
+					<resource  external="17">  </resource>
+					<resource  external="18">  </resource>
+					<resource  external="19">  </resource>
+					<resource  external="20">  </resource>
+					<resource  external="21">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "default" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
 		</array>
 
 	</resource>
@@ -63,13 +76,14 @@
 		<string name="tracks/0/type"> "value" </string>
 		<node_path name="tracks/0/path"> ".:frame" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
 		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
 			<string> "times" </string>
 			<real_array  len="2"> 				0, 0.5 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
 			<string> "values" </string>
 			<array  len="2" shared="false">
 				<int> 10 </int>
@@ -79,19 +93,20 @@
 
 	</resource>
 	<resource type="Animation" path="local://3">
-		<real name="length"> 0.5 </real>
+		<real name="length"> 0.2 </real>
 		<bool name="loop"> False </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
 		<node_path name="tracks/0/path"> ".:transform/rot" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
 		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
 			<string> "times" </string>
-			<real_array  len="2"> 				0, 0.5 </real_array>
+			<real_array  len="2"> 				0, 0.2 </real_array>
 			<string> "transitions" </string>
-			<real_array  len="2"> 				1, 1 </real_array>
+			<real_array  len="2"> 				0.5, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
 			<string> "values" </string>
 			<array  len="2" shared="false">
 				<real> 0 </real>
@@ -101,19 +116,20 @@
 
 	</resource>
 	<resource type="Animation" path="local://4">
-		<real name="length"> 0.5 </real>
+		<real name="length"> 0.4 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
 		<node_path name="tracks/0/path"> ".:frame" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
 		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> True </bool>
 			<string> "times" </string>
-			<real_array  len="2"> 				0, 0.5 </real_array>
+			<real_array  len="2"> 				0, 0.4 </real_array>
 			<string> "transitions" </string>
 			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
 			<string> "values" </string>
 			<array  len="2" shared="false">
 				<int> 0 </int>
@@ -123,45 +139,75 @@
 
 	</resource>
 	<resource type="SampleLibrary" path="local://5">
-		<dictionary name="samples/hit4" shared="false">
+		<dictionary name="samples/begin" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://music/hit4.wav">  </resource>
+			<resource  external="22">  </resource>
 		</dictionary>
-		<dictionary name="samples/hit5" shared="false">
+		<dictionary name="samples/step1" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://music/hit5.wav">  </resource>
+			<resource  external="23">  </resource>
 		</dictionary>
-		<dictionary name="samples/hit2" shared="false">
+		<dictionary name="samples/step2" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://music/hit2.wav">  </resource>
+			<resource  external="24">  </resource>
 		</dictionary>
-		<dictionary name="samples/hit1" shared="false">
+		<dictionary name="samples/step3" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://music/hit1.wav">  </resource>
+			<resource  external="25">  </resource>
 		</dictionary>
-		<dictionary name="samples/hit3" shared="false">
+		<dictionary name="samples/swing1" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://music/hit3.wav">  </resource>
+			<resource  external="26">  </resource>
+		</dictionary>
+		<dictionary name="samples/swing2" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
+			<string> "sample" </string>
+			<resource  external="27">  </resource>
+		</dictionary>
+		<dictionary name="samples/swing3" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "priority" </string>
+			<int> 0 </int>
+			<string> "sample" </string>
+			<resource  external="28">  </resource>
 		</dictionary>
 
 	</resource>
@@ -170,23 +216,16 @@
 			<string> "conn_count" </string>
 			<int> 6 </int>
 			<string> "conns" </string>
-			<int_array  len="36"> 				1, 0, 124, 123, 2, 0, 2, 0, 124, 125, 2, 0, 5, 3, 127, 126, 2, 0, 6, 3, 129, 128, 2, 0, 14, 0, 131, 130, 2, 0, 17, 3, 131, 132, 2, 0 </int_array>
+			<int_array  len="36"> 				1, 0, 100, 99, 2, 0, 2, 0, 100, 101, 2, 0, 5, 3, 103, 102, 2, 0, 6, 3, 105, 104, 2, 0, 14, 0, 107, 106, 2, 0, 17, 3, 107, 108, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "names" </string>
-			<string_array  len="133">
+			<string_array  len="109">
 				<string> "world" </string>
-				<string> "Node2D" </string>
-				<string> "_import_path" </string>
-				<string> "visibility/visible" </string>
-				<string> "visibility/opacity" </string>
-				<string> "visibility/self_opacity" </string>
-				<string> "visibility/light_mask" </string>
-				<string> "transform/pos" </string>
-				<string> "transform/rot" </string>
-				<string> "transform/scale" </string>
-				<string> "z/z" </string>
-				<string> "z/relative" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
+				<string> "Node2D" </string>
 				<string> "Timer" </string>
 				<string> "process_mode" </string>
 				<string> "wait_time" </string>
@@ -194,19 +233,16 @@
 				<string> "autostart" </string>
 				<string> "Timer_block" </string>
 				<string> "ninja" </string>
-				<string> "KinematicBody2D" </string>
+				<string> "transform/pos" </string>
 				<string> "input/pickable" </string>
-				<string> "shape_count" </string>
 				<string> "collision/layers" </string>
 				<string> "collision/mask" </string>
 				<string> "collision/margin" </string>
+				<string> "KinematicBody2D" </string>
 				<string> "AnimatedSprite" </string>
+				<string> "editor/display_folded" </string>
 				<string> "frames" </string>
-				<string> "frame" </string>
-				<string> "centered" </string>
-				<string> "flip_h" </string>
-				<string> "flip_v" </string>
-				<string> "modulate" </string>
+				<string> "animation" </string>
 				<string> "AnimationPlayer" </string>
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
@@ -220,74 +256,61 @@
 				<string> "autoplay" </string>
 				<string> "VisibilityNotifier2D" </string>
 				<string> "rect" </string>
-				<string> "SamplePlayer2D" </string>
-				<string> "params/volume_db" </string>
-				<string> "params/pitch_scale" </string>
-				<string> "params/attenuation/min_distance" </string>
-				<string> "params/attenuation/max_distance" </string>
-				<string> "params/attenuation/distance_exp" </string>
+				<string> "SamplePlayer" </string>
 				<string> "config/polyphony" </string>
 				<string> "config/samples" </string>
-				<string> "config/pitch_random" </string>
+				<string> "default/volume_db" </string>
+				<string> "default/pitch_scale" </string>
+				<string> "default/pan" </string>
+				<string> "default/depth" </string>
+				<string> "default/height" </string>
+				<string> "default/filter/type" </string>
+				<string> "default/filter/cutoff" </string>
+				<string> "default/filter/resonance" </string>
+				<string> "default/filter/gain" </string>
+				<string> "default/reverb_room" </string>
+				<string> "default/reverb_send" </string>
+				<string> "default/chorus_send" </string>
 				<string> "RayCast2D" </string>
 				<string> "enabled" </string>
 				<string> "cast_to" </string>
 				<string> "layer_mask" </string>
+				<string> "type_mask" </string>
 				<string> "ray_bottom" </string>
 				<string> "ray_up" </string>
 				<string> "background" </string>
-				<string> "CanvasLayer" </string>
 				<string> "layer" </string>
 				<string> "offset" </string>
 				<string> "rotation" </string>
 				<string> "scale" </string>
+				<string> "CanvasLayer" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
-				<string> "vframes" </string>
-				<string> "hframes" </string>
-				<string> "region" </string>
-				<string> "region_rect" </string>
 				<string> "gui" </string>
 				<string> "replay" </string>
-				<string> "Button" </string>
-				<string> "margin/left" </string>
-				<string> "margin/top" </string>
-				<string> "margin/right" </string>
-				<string> "margin/bottom" </string>
-				<string> "focus_neighbour/left" </string>
-				<string> "focus_neighbour/top" </string>
-				<string> "focus_neighbour/right" </string>
-				<string> "focus_neighbour/bottom" </string>
 				<string> "focus/ignore_mouse" </string>
 				<string> "focus/stop_mouse" </string>
 				<string> "size_flags/horizontal" </string>
 				<string> "size_flags/vertical" </string>
-				<string> "size_flags/stretch_ratio" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
 				<string> "custom_fonts/font" </string>
-				<string> "disabled" </string>
 				<string> "toggle_mode" </string>
-				<string> "is_pressed" </string>
-				<string> "click_on_press" </string>
+				<string> "enabled_focus_mode" </string>
+				<string> "shortcut" </string>
 				<string> "text" </string>
-				<string> "icon" </string>
 				<string> "flat" </string>
-				<string> "clip_text" </string>
-				<string> "align" </string>
+				<string> "Button" </string>
 				<string> "scores" </string>
-				<string> "Label" </string>
 				<string> "custom_colors/font_color" </string>
-				<string> "range/min" </string>
-				<string> "range/max" </string>
-				<string> "range/step" </string>
-				<string> "range/page" </string>
-				<string> "range/value" </string>
-				<string> "range/exp_edit" </string>
-				<string> "rounded_values" </string>
-				<string> "valign" </string>
-				<string> "autowrap" </string>
-				<string> "uppercase" </string>
 				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "Label" </string>
 				<string> "welcome" </string>
+				<string> "align" </string>
 				<string> "start" </string>
 				<string> "StreamPlayer" </string>
 				<string> "stream/stream" </string>
@@ -296,6 +319,8 @@
 				<string> "stream/volume_db" </string>
 				<string> "stream/autoplay" </string>
 				<string> "stream/paused" </string>
+				<string> "stream/loop_restart_time" </string>
+				<string> "stream/buffering_ms" </string>
 				<string> "_on_Timer_timeout" </string>
 				<string> "timeout" </string>
 				<string> "_on_Timer_block_timeout" </string>
@@ -309,212 +334,77 @@
 			</string_array>
 			<string> "node_count" </string>
 			<int> 19 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
 			<string> "nodes" </string>
-			<int_array  len="713"> 				-1, -1, 1, 0, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 0, 0, 0, 14, 14, -1, 5, 2, 0, 15, 3, 16, 2, 17, 10, 18, 10, 0, 0, 0, 14, 19, -1, 5, 2, 0, 15, 3, 16, 11, 17, 10, 18, 1, 0, 0, 0, 21, 20, -1, 16, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 12, 8, 5, 9, 6, 10, 7, 11, 1, 22, 10, 23, 7, 24, 3, 25, 3, 26, 13, 12, 14, 0, 3, 0, 27, 27, -1, 16, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 28, 15, 29, 16, 30, 1, 31, 10, 32, 10, 33, 17, 0, 4, 0, 34, 34, -1, 11, 2, 0, 35, 3, 36, 5, 37, 18, 38, 19, 39, 20, 40, 21, 41, 1, 42, 2, 43, 22, 44, 23, 0, 3, 0, 45, 45, -1, 11, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 46, 24, 0, 3, 0, 47, 47, -1, 18, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 48, 5, 49, 2, 50, 2, 51, 25, 52, 2, 53, 3, 54, 26, 55, 5, 0, 3, 0, 56, 56, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 27, 8, 5, 9, 6, 10, 7, 11, 1, 57, 1, 58, 28, 59, 3, 0, 3, 0, 56, 60, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 29, 8, 5, 9, 6, 10, 7, 11, 1, 57, 1, 58, 30, 59, 3, 0, 3, 0, 56, 61, -1, 13, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 31, 8, 5, 9, 6, 10, 7, 11, 1, 57, 1, 58, 30, 59, 3, 0, 0, 0, 63, 62, -1, 5, 2, 0, 64, 32, 65, 4, 66, 5, 67, 6, 0, 11, 0, 68, 68, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 33, 8, 5, 9, 6, 10, 7, 11, 1, 69, 34, 30, 1, 65, 4, 31, 10, 32, 10, 70, 3, 71, 3, 29, 7, 33, 17, 72, 10, 73, 35, 0, 0, 0, 63, 74, -1, 5, 2, 0, 64, 36, 65, 4, 66, 5, 67, 6, 0, 13, 0, 76, 75, -1, 28, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 77, 37, 78, 38, 79, 39, 80, 40, 81, 0, 82, 0, 83, 0, 84, 0, 85, 10, 86, 1, 87, 36, 88, 36, 89, 2, 90, 41, 91, 10, 92, 10, 93, 10, 94, 10, 95, 42, 96, 43, 97, 10, 98, 10, 99, 3, 0, 13, 0, 101, 100, -1, 32, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 77, 44, 78, 45, 79, 46, 80, 47, 81, 0, 82, 0, 83, 0, 84, 0, 85, 1, 86, 1, 87, 36, 89, 2, 90, 41, 102, 48, 103, 5, 104, 2, 105, 2, 106, 2, 107, 5, 108, 10, 109, 10, 95, 49, 99, 7, 110, 7, 111, 10, 112, 10, 113, 50, 0, 13, 0, 101, 114, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 78, 51, 79, 52, 80, 53, 81, 0, 82, 0, 83, 0, 84, 0, 85, 1, 86, 1, 87, 36, 89, 2, 90, 41, 102, 48, 103, 5, 104, 54, 105, 2, 106, 54, 107, 5, 108, 10, 109, 10, 95, 55, 99, 3, 110, 7, 111, 10, 112, 10, 113, 50, 0, 13, 0, 76, 115, -1, 28, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 77, 37, 78, 38, 79, 39, 80, 40, 81, 0, 82, 0, 83, 0, 84, 0, 85, 10, 86, 1, 87, 36, 88, 36, 89, 2, 90, 41, 91, 10, 92, 10, 93, 10, 94, 10, 95, 56, 96, 43, 97, 10, 98, 10, 99, 3, 0, 0, 0, 116, 116, -1, 7, 2, 0, 117, 57, 118, 10, 119, 1, 120, 5, 121, 10, 122, 10, 0 </int_array>
+			<int_array  len="401"> 				-1, -1, 3, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 4, 4, -1, 4, 5, 2, 6, 3, 7, 4, 8, 4, 0, 0, 0, 4, 9, -1, 4, 5, 2, 6, 5, 7, 4, 8, 6, 0, 0, 0, 16, 10, -1, 6, 11, 7, 12, 4, 13, 2, 14, 2, 15, 8, 1, 9, 0, 3, 0, 17, 17, -1, 3, 18, 6, 19, 10, 20, 11, 0, 4, 0, 21, 21, -1, 10, 22, 2, 23, 12, 24, 13, 25, 14, 26, 15, 27, 16, 28, 6, 29, 17, 30, 18, 31, 19, 0, 3, 0, 32, 32, -1, 1, 33, 20, 0, 3, 0, 34, 34, -1, 14, 35, 21, 36, 22, 37, 12, 38, 17, 39, 12, 40, 12, 41, 12, 42, 23, 43, 24, 44, 17, 45, 17, 46, 25, 47, 12, 48, 12, 0, 3, 0, 49, 49, -1, 5, 11, 26, 50, 6, 51, 27, 52, 2, 53, 28, 0, 3, 0, 49, 54, -1, 5, 11, 29, 50, 6, 51, 30, 52, 2, 53, 28, 0, 3, 0, 49, 55, -1, 5, 11, 31, 50, 6, 51, 30, 52, 2, 53, 28, 0, 0, 0, 61, 56, -1, 4, 57, 32, 58, 33, 59, 12, 60, 34, 0, 11, 0, 62, 62, -1, 2, 11, 35, 63, 36, 0, 0, 0, 61, 64, -1, 4, 57, 25, 58, 33, 59, 12, 60, 34, 0, 13, 0, 80, 65, -1, 14, 66, 4, 67, 6, 68, 25, 69, 25, 70, 37, 71, 38, 72, 39, 73, 40, 74, 41, 75, 4, 76, 25, 77, 42, 78, 43, 79, 4, 0, 13, 0, 86, 81, -1, 14, 66, 6, 67, 6, 68, 25, 69, 23, 70, 44, 71, 45, 72, 46, 73, 47, 74, 41, 82, 48, 78, 49, 83, 17, 84, 23, 85, 32, 0, 13, 0, 86, 87, -1, 15, 66, 6, 67, 6, 68, 25, 69, 23, 70, 12, 71, 50, 72, 51, 73, 52, 74, 41, 82, 48, 78, 53, 88, 2, 83, 17, 84, 23, 85, 32, 0, 13, 0, 80, 89, -1, 14, 66, 4, 67, 6, 68, 25, 69, 25, 70, 37, 71, 38, 72, 39, 73, 40, 74, 41, 75, 4, 76, 25, 77, 42, 78, 54, 79, 4, 0, 0, 0, 90, 90, -1, 8, 91, 55, 92, 4, 93, 6, 94, 56, 95, 4, 96, 4, 97, 12, 98, 57, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="58" shared="false">
-				<node_path> "" </node_path>
-				<bool> True </bool>
-				<real> 1 </real>
-				<int> 1 </int>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<int> 0 </int>
-				<resource  resource_type="Script" path="res://scripts/main.gd">  </resource>
+				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "Script" </string>
-					<string> "__editor_plugin_states__" </string>
-					<dictionary  shared="false">
-						<string> "2D" </string>
-						<dictionary  shared="false">
-							<string> "ofs" </string>
-							<vector2> -137.789, -184.586 </vector2>
-							<string> "snap_grid" </string>
-							<bool> False </bool>
-							<string> "snap_offset" </string>
-							<vector2> 0, 0 </vector2>
-							<string> "snap_pixel" </string>
-							<bool> False </bool>
-							<string> "snap_relative" </string>
-							<bool> False </bool>
-							<string> "snap_rotation" </string>
-							<bool> False </bool>
-							<string> "snap_rotation_offset" </string>
-							<real> 0 </real>
-							<string> "snap_rotation_step" </string>
-							<real> 0.261799 </real>
-							<string> "snap_show_grid" </string>
-							<bool> False </bool>
-							<string> "snap_step" </string>
-							<vector2> 10, 10 </vector2>
-							<string> "zoom" </string>
-							<real> 0.66342 </real>
-						</dictionary>
-						<string> "3D" </string>
-						<dictionary  shared="false">
-							<string> "ambient_light_color" </string>
-							<color> 0.15, 0.15, 0.15, 1 </color>
-							<string> "default_light" </string>
-							<bool> True </bool>
-							<string> "default_srgb" </string>
-							<bool> False </bool>
-							<string> "deflight_rot_x" </string>
-							<real> 0.942478 </real>
-							<string> "deflight_rot_y" </string>
-							<real> 0.628319 </real>
-							<string> "fov" </string>
-							<real> 45 </real>
-							<string> "show_grid" </string>
-							<bool> True </bool>
-							<string> "show_origin" </string>
-							<bool> True </bool>
-							<string> "viewport_mode" </string>
-							<int> 1 </int>
-							<string> "viewports" </string>
-							<array  len="4" shared="false">
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "listener" </string>
-									<bool> True </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "listener" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "listener" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-								</dictionary>
-								<dictionary  shared="false">
-									<string> "distance" </string>
-									<real> 4 </real>
-									<string> "listener" </string>
-									<bool> False </bool>
-									<string> "pos" </string>
-									<vector3> 0, 0, 0 </vector3>
-									<string> "use_environment" </string>
-									<bool> False </bool>
-									<string> "use_orthogonal" </string>
-									<bool> False </bool>
-									<string> "x_rot" </string>
-									<real> 0 </real>
-									<string> "y_rot" </string>
-									<real> 0 </real>
-								</dictionary>
-							</array>
-							<string> "zfar" </string>
-							<real> 500 </real>
-							<string> "znear" </string>
-							<real> 0.1 </real>
-						</dictionary>
-						<string> "Script" </string>
-						<dictionary  shared="false">
-							<string> "current" </string>
-							<int> 2 </int>
-							<string> "sources" </string>
-							<array  len="3" shared="false">
-								<string> "res://scripts/main.gd" </string>
-								<string> "res://scripts/block.gd" </string>
-								<string> "res://scripts/ninja.gd" </string>
-							</array>
-						</dictionary>
-					</dictionary>
-					<string> "__editor_run_settings__" </string>
-					<dictionary  shared="false">
-						<string> "custom_args" </string>
-						<string> "-l $scene" </string>
-						<string> "run_mode" </string>
-						<int> 0 </int>
-					</dictionary>
 				</dictionary>
+				<int> 1 </int>
+				<real> 0.4 </real>
 				<bool> False </bool>
 				<real> 30 </real>
+				<bool> True </bool>
 				<vector2> 180.93, 368.661 </vector2>
 				<real> 0.08 </real>
-				<resource  resource_type="Script" path="res://scripts/ninja.gd">  </resource>
+				<resource  external="1">  </resource>
 				<resource  resource_type="SpriteFrames" path="local://1">  </resource>
-				<int> 10 </int>
-				<color> 1, 1, 1, 1 </color>
+				<string> "default" </string>
+				<real> 0 </real>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://2">  </resource>
 				<resource  resource_type="Animation" path="local://3">  </resource>
 				<resource  resource_type="Animation" path="local://4">  </resource>
+				<real> 1 </real>
 				<array  len="0" shared="false">
 				</array>
 				<string> "run" </string>
 				<rect2> -10, -10, 20, 20 </rect2>
-				<real> 2048 </real>
+				<int> 3 </int>
 				<resource  resource_type="SampleLibrary" path="local://5">  </resource>
+				<int> 0 </int>
+				<real> 5000 </real>
+				<int> 2 </int>
 				<vector2> 42, -60 </vector2>
 				<vector2> 0, 120 </vector2>
+				<int> 15 </int>
 				<vector2> -32, 80 </vector2>
 				<vector2> 64, 0 </vector2>
 				<vector2> -32, -80 </vector2>
 				<int> -1 </int>
+				<vector2> 0, 0 </vector2>
+				<vector2> 1, 1 </vector2>
 				<vector2> 640, 290.066 </vector2>
-				<resource  resource_type="Texture" path="res://gfx/bg.png">  </resource>
-				<rect2> 0, 0, 0, 0 </rect2>
-				<int> 2 </int>
+				<resource  external="29">  </resource>
 				<real> 490 </real>
 				<real> 388 </real>
 				<real> 790 </real>
 				<real> 488 </real>
-				<resource  resource_type="Font" path="res://fonts/baihana.fnt">  </resource>
-				<string> "Replay" </string>
-				<resource name=""></resource>				<real> 7 </real>
+				<resource  external="30">  </resource>
+				<resource name=""></resource>				<string> "Replay" </string>
+				<real> 7 </real>
 				<real> 9 </real>
 				<real> 446 </real>
 				<real> 79 </real>
 				<color> 0, 0, 0, 1 </color>
 				<string> "SCORE: 0" </string>
-				<real> -1 </real>
 				<real> 201 </real>
 				<real> 1280 </real>
 				<real> 430 </real>
-				<real> 4 </real>
 				<string> "Ninja Training&#000a;&#000a;by alket&#000a;www.kobuge.org" </string>
 				<string> "Train" </string>
-				<resource  resource_type="AudioStream" path="res://music/blackmoor_ninjas.ogg">  </resource>
+				<resource  external="31">  </resource>
+				<real> 2 </real>
+				<int> 500 </int>
 			</array>
 			<string> "version" </string>
-			<int> 1 </int>
+			<int> 2 </int>
 		</dictionary>
 
 	</main_resource>

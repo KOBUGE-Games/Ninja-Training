@@ -15,23 +15,23 @@ func _ready():
 	get_parent().get_node("gui/scores").set_text("HIGHSCORE: "+str(get_previous_score()))
 	get_node("AnimatedSprite/AnimationPlayer").play("idle")
 
-	
+
 func _fixed_process(delta):
 	if !dead:
 		if !get_node("ray_bottom").is_colliding() && !get_node("ray_up").is_colliding():
 			jump = false
 			if side == 0:
-				move(Vector2(0,10))
+				move(Vector2(0,22))
 			else:
-				move(Vector2(0,-10))
+				move(Vector2(0,-22))
 		else:
 			jump = true
 
 	else:
 		if side == 0:
-			move(Vector2(0,10))
+			move(Vector2(0,22))
 		else:
-			move(Vector2(0,-10))
+			move(Vector2(0,-22))
 	
 	if get_node("RayCast2D").is_colliding():
 		add_collision_exception_with(get_node("RayCast2D").get_collider())
@@ -39,25 +39,25 @@ func _fixed_process(delta):
 		
 	if hit:
 		if side == 0:
-			move(Vector2(-int(get_node("RayCast2D").get_collider().speed),10))
+			move(Vector2(-int(get_node("RayCast2D").get_collider().speed),22))
 		else:
-			move(Vector2(-int(get_node("RayCast2D").get_collider().speed),-10))
+			move(Vector2(-int(get_node("RayCast2D").get_collider().speed),-22))
 		hit = false
 
 func _input(ev):
 	if ev.is_pressed() && !ev.is_echo() && jump && start:
 		jump = false
-		sound = (randi() % 5)+1
-		get_node("SamplePlayer2D").play("hit"+str(sound))
+		sound = (randi() % 3)+1
+		get_node("SamplePlayer").play("swing"+str(sound))
 		score +=1
 		get_parent().get_node("gui/scores").set_text("SCORE: "+str(score))
 		if side == 0:
-			move(Vector2(0,-20))
+			move(Vector2(0,-50))
 			get_node("AnimatedSprite/AnimationPlayer").play("rotate")
 			get_node("AnimatedSprite").set_flip_h(true)
 			side = 1
 		else:
-			move(Vector2(0,20))
+			move(Vector2(0,50))
 			get_node("AnimatedSprite/AnimationPlayer").play("rotate",-1,-1,true)
 			get_node("AnimatedSprite").set_flip_h(false)
 			side = 0
@@ -76,6 +76,9 @@ func _on_AnimationPlayer_finished():
 
 
 func _on_start_pressed():
+	randomize()
+	get_parent().get_node("StreamPlayer").play()
+	get_node("SamplePlayer").play("begin")
 	get_parent().get_node("Timer").start()
 	get_parent().get_node("gui/welcome").hide()
 	get_node("AnimatedSprite/AnimationPlayer").play("run")

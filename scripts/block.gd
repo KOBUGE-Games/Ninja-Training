@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 10
+var speed = 20
 var movement = true
 var last_one = false
 

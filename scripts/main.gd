@@ -3,19 +3,20 @@ extends Node2D
 var block = load("res://scenes/block.xml")
 var new_block
 var side = 1
-var speed = 10
+var speed = 20
 var amount = 0
+var adds = 0
 var last_i = 0
 var last_block
 
 func _ready():
-	randomize()
 	initial_blocks()
 	get_node("gui/replay").hide()
-	get_node("StreamPlayer").play()
 
 func _on_Timer_timeout():
-	amount = (randi() % 5)+2
+	adds += 0.1
+	speed += 0.25
+	amount = (randi() % (5+int(adds)))+2 
 	if side == 0:
 		for i in range(amount):
 			new_block = block.instance()
